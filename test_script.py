@@ -19,7 +19,6 @@ with open('tokenizer.pickle', 'rb') as handle:
 print("Done")
 r = sr.Recognizer()
 r.pause_threshold = 0.3
-r.phrase_threshold = 1.0
 r.non_speaking_duration = 1.0
 mic = sr.Microphone()
 engine = pyttsx3.init()
@@ -50,7 +49,7 @@ def processAndAdd(audio, index):
 		transcribed_text =  "[Untranscribed]"
 	print(transcribed_text)
 	input_text = (index, transcribed_text)
-	texts.append(input_text)
+	texts.append(transcribed_text)
 	if any(x in ["bye emo", "buy emo", "by emo", "bye-bye emo"] for x in [transcribed_text]):
 		break_flag = True
 	return
@@ -82,7 +81,7 @@ while (True):
 			t.start()
 			print("Launched thread")
 			index = index + 1		
-	break
+
 
 	sequences = tokenizer.texts_to_sequences(texts)
 	data = pad_sequences(sequences, padding='post', maxlen=(MAX_SEQUENCE_LENGTH))

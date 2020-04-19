@@ -1,6 +1,24 @@
-# WIP
+# EMO Personal Therapy Robot - Text Emotion Classification
 
-# Emotion Datasets Survey README
+Abstract—A system capable of analyzing user sentiment
+through facial and text analysis. E-MO is a robot
+therapist that analyzes the user's emotion by
+capturing their face and speech and performing
+facial emotion recognition and sentiment analysis. It
+also acts as an interactive diary, storing the user's
+verbal journal entries as text in a web application
+labeled by emotion. E-MO provides instant
+therapeutic feedback to the user's environment by
+adjusting IoT devices such as lighting, temperature,
+and music connected devices.
+
+##Running the Code
+You need the following to run the code: 
+python3, numpy, pandas, pyaudio, threading, speech_recognition, pyttsx3, keras, tensorflow.
+
+Run the test_script.py. The code will keep recording and recognizing sentences until it hears "bye emo". After that, all the sentences are analyzed for emotion. 
+
+# Emotion Datasets Credits
 
 This file is a meta-README for all the datasets used in emotion recognition that are redistributatble or obtainable. 
 
