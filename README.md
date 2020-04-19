@@ -12,9 +12,9 @@ therapeutic feedback to the user's environment by
 adjusting IoT devices such as lighting, temperature,
 and music connected devices.
 
-##Running the Code
+## Running the Code
 You need the following to run the code: 
-python3, numpy, pandas, pyaudio, threading, speech_recognition, pyttsx3, keras, tensorflow.
+**python3, numpy, pandas, pyaudio, threading, speech_recognition, pyttsx3, keras, tensorflow.**
 
 Run the test_script.py. The code will keep recording and recognizing sentences until it hears "bye emo". After that, all the sentences are analyzed for emotion. 
 
